@@ -10,8 +10,7 @@ Wedding: Friday 25 December 2026, 6:30 PM — Meraz Convention Hall, Mirpur-12, 
 
 ## Versions
 
-- `/` — original floral version (git tag `v1-floral`, untouched).
-- `/v2/` — Bangalee "Terracotta Temple Niche" version (own files in `v2/`, shares the audio, countdown and card-viewer scripts).
+The floral invitation at `/` is the live version. An alternative Bangalee cover design ("v2") was dismissed and is archived in git: `git checkout v2-bangalee-archive -- v2`.
 
 ## Music
 
