@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Shahriar and Riya//Wedding//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:shahriar-riya-wedding-20261225@wedding
+DTSTAMP:20261012T000000Z
+DTSTART:20261225T123000Z
+DTEND:20261225T163000Z
+SUMMARY:Wedding of Shahriar & Riya
+LOCATION:Meraz Convention Hall\, Safura Trade City (Lift-10)\, Sujat Nogor\, 142 Sena Nibas Road\, Mirpur-12\, Dhaka-1216
+DESCRIPTION:Wedding ceremony of M Shahriar Bin Malek and Sadia Afrin Riya. Contact: 01713663450 / 01760925985
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Wedding of Shahriar & Riya tomorrow
+END:VALARM
+END:VEVENT
+END:VCALENDAR
