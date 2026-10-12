@@ -125,11 +125,10 @@ svg { display: block; }
 
 .families { padding-top: 40px; }
 .crest { width: 170px; margin: 0 auto 26px; }
-.family + .with, .with + .family { margin-top: 0; }
-.fname { font-family: var(--script); font-weight: 400; font-size: 34px; line-height: 1.25; color: var(--crimson); text-wrap: balance; }
+.fname { font-family: 'Alex Brush', var(--script); font-weight: 400; font-size: 35px; line-height: 1.25; color: var(--crimson); text-wrap: balance; }
 .fline { margin: 4px auto 0; font-family: var(--serif); font-style: italic; font-size: 16.5px; color: var(--ink); line-height: 1.45; }
 .fline span { white-space: nowrap; display: inline-block; }
-.with { font-family: var(--script); font-size: 26px; color: var(--gold); margin: 22px 0 14px; }
+.with { font-family: var(--script); font-size: 26px; color: var(--gold); margin: 13px 0 6px; }
 
 .dateblock { margin: 28px auto 0; display: flex; flex-direction: column; align-items: center; font-family: var(--serif); font-weight: 700; color: var(--crimson); }
 .db-month { font-size: 20px; letter-spacing: .08em; }
