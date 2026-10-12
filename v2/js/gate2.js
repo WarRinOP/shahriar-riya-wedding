@@ -1,4 +1,4 @@
-// v2 gate: seal lifts away, the cover splits at the seam and swings open like book covers (hinged on the outer edges).
+// v2 gate: seal lifts away, the cover splits at the seam and swings open like book covers (hinged on the outer edges) and leaves the screen completely.
 export function initGate2({ gate, device, scroller, onTap, onDone }) {
   const q = s => gate.querySelector(s);
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -52,9 +52,6 @@ export function initGate2({ gate, device, scroller, onTap, onDone }) {
         { transform: 'scale(1.08)', filter: 'brightness(.7)' },
         { transform: 'scale(1)', filter: 'brightness(1)' },
       ], { delay: 650, duration: 1900, easing: 'cubic-bezier(.2,.7,.2,1)' });
-
-      // the swung-open cover settles at the edges as slim borders
-      device.querySelectorAll('.dock').forEach(d => A(d, [{ opacity: 0 }, { opacity: 1 }], { delay: 1700, duration: 700 }));
     }
 
     Promise.all(anims.map(a => a.finished)).then(() => {

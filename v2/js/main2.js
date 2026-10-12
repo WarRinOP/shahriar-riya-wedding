@@ -1,4 +1,4 @@
-import { coverHalf, coverDock, heroArt, sealArt, crestArt2 } from './art2.js';
+import { coverHalf, heroArt, sealArt, crestArt2 } from './art2.js';
 import { initGate2 } from './gate2.js';
 import { unlock, showButton } from '/js/audio.js';
 import { initCountdown } from '/js/countdown.js';
@@ -9,7 +9,6 @@ const device = $('#device'), scroller = $('#scroller'), gate = $('#gate');
 
 // vector art
 document.querySelectorAll('[data-cover]').forEach(el => el.insertAdjacentHTML('afterbegin', coverHalf(el.dataset.cover)));
-document.querySelectorAll('[data-dock]').forEach(el => { el.innerHTML = coverDock(el.dataset.dock); });
 $('[data-hero-art]').innerHTML = heroArt();
 $('[data-seal]').innerHTML = sealArt();
 document.querySelectorAll('[data-crest]').forEach(el => { el.innerHTML = crestArt2(); });

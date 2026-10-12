@@ -6,7 +6,7 @@ const C = {
   crimson: '#A82034', maroon: '#5C0F1F', deep: '#3A0712', green: '#2F7D3A', green2: '#3E9A4B',
   red: '#E8472B', skin: '#8B4A2B',
 };
-export const HERO_H = 920;          // second-page canvas height (names etc. sit 76px lower than the Stitch mock-up to fit the invocation text)
+export const HERO_H = 944;          // second-page canvas height (names etc. sit 100px lower than the Stitch mock-up to fit the invocation text)
 const SHIFT = HERO_H - 844;
 
 const f = n => Math.round(n * 10) / 10;
@@ -122,12 +122,6 @@ export function coverHalf(side) {
   return `<svg viewBox="${L ? '0' : '195'} 0 195 844" preserveAspectRatio="${L ? 'xMaxYMid' : 'xMinYMid'} meet" aria-hidden="true">${coverArt(L ? 'cL' : 'cR', { anim: ANIM })}</svg>`;
 }
 
-// the opened cover, seen almost edge-on: squeezed into a slim sliver that stays at the screen edge
-export function coverDock(side) {
-  const L = side === 'L';
-  return `<svg viewBox="${L ? '0' : '195'} 0 195 844" preserveAspectRatio="none" aria-hidden="true">${coverArt(L ? 'dL' : 'dR', { anim: false })}</svg>`;
-}
-
 // ---------- SECOND PAGE BACKDROP ----------
 export function heroArt() {
   const s = SHIFT;
@@ -139,9 +133,9 @@ export function heroArt() {
   return `<svg viewBox="0 0 390 ${HERO_H}" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
     <rect width="390" height="${HERO_H}" fill="${C.cream}"/>
     <g>${rays(195, y(320), 20, 11, C.creamDk)}</g>
-    <path d="M27 245A170.6 170.6 0 0 1 363 245" fill="none" stroke="${C.crimson}" stroke-width="3"/>
-    <path d="M41 250A156 156 0 0 1 349 250M40 250V${y(700)}M350 250V${y(700)}" fill="none" stroke="${C.marigold}" stroke-width="2.4" stroke-dasharray="0.1 5.4" stroke-linecap="round"/>
-    <path d="M120 150H270" stroke="${C.crimson}" stroke-width="2"/><path d="M195 142L203 150L195 158L187 150Z" fill="${C.crimson}"/>
+    <path d="M27 281A170.6 170.6 0 0 1 363 281" fill="none" stroke="${C.crimson}" stroke-width="3"/>
+    <path d="M41 286A156 156 0 0 1 349 286M40 286V${y(700)}M350 286V${y(700)}" fill="none" stroke="${C.marigold}" stroke-width="2.4" stroke-dasharray="0.1 5.4" stroke-linecap="round"/>
+    <path d="M120 112H270" stroke="${C.crimson}" stroke-width="2"/><path d="M195 104L203 112L195 120L187 112Z" fill="${C.crimson}"/>
     <path d="M110 ${y(424)}H280" stroke="${C.crimson}" stroke-width="2.4" stroke-dasharray="0.1 5.4" stroke-linecap="round"/>
     ${diamondChain(24, C.crimson, C.marigold)}
     ${wave(ground, 110, C.green2, 8)}
