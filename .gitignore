@@ -2,3 +2,13 @@ Screen Recording*
 .vercel
 .DS_Store
 .env*
+
+# local-only working files (not part of the site)
+BRIEF.md
+PLAN.md
+Wedding Card.jpeg
+assets/bismillah.png
+assets/date_stamp.png
+assets/monogram.png
+assets/palki.png
+assets/Direction*
