@@ -326,19 +326,15 @@ Each section reveals once via IntersectionObserver (threshold 0.2, then unobserv
 
 - Framed in a floral wreath built from the vine and crest symbols.
 
-### 9.4 Contact & RSVP
+### 9.4 Contact
 
-- **Contact** — the two numbers from the card, each with:
+- Two contact cards, each with a role label and Call / WhatsApp buttons:
 
-  - Call: `tel:+8801713663450` / `tel:+8801760925985`
+  - **Bride's Father** — 01713663450 (`tel:+8801713663450`, `https://wa.me/8801713663450`)
 
-  - WhatsApp: `https://wa.me/8801713663450` / `https://wa.me/8801760925985`
+  - **Groom's Mother** — 01760925985 (`tel:+8801760925985`, `https://wa.me/8801760925985`)
 
-- **RSVP card:** Full name (required) · Joyfully Accept / Regretfully Decline · Number of guests (stepper, hidden on decline) · Dua / wishes.
-
-- **Send RSVP:** validates, then opens a styled `<dialog>` — "JazakAllahu Khairan, {name}" — with a preview of the message and a real `<a href="https://wa.me/880…?text=…">Send on WhatsApp</a>` link. A genuine link tap is never popup-blocked in in-app browsers. The message starts with "Assalamu Alaikum" and is built with `encodeURIComponent`. An unsent draft is kept in `localStorage`.
-
-- A `wa.me` link can target only one number — see open question 2.
+- **No RSVP form** (removed by request): guests reach the families directly by phone or WhatsApp.
 
 ---
 
@@ -404,7 +400,7 @@ Each section reveals once via IntersectionObserver (threshold 0.2, then unobserv
 
 6. Families, When & Where (maps + calendar), Gifts & Dua.
 
-7. Contact & RSVP.
+7. Contact cards.
 
 8. Card lightbox.
 
@@ -416,7 +412,6 @@ Each section reveals once via IntersectionObserver (threshold 0.2, then unobserv
 
 1. **Music** — is there a preferred track (shehnai / instrumental) with usage rights? Otherwise the audio is wired to a placeholder file to drop in later.
 
-2. **RSVP recipient** — whose numbers are 01713663450 and 01760925985? Should RSVPs go to one number, or should guests choose "Groom's family / Bride's family"?
 
 3. **Card scan** — is a higher-resolution scan or PDF of the card available for the lightbox?
 

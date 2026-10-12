@@ -2,7 +2,6 @@ import { doorArt, marginArt, crestArt } from './art.js';
 import { initGate } from './opening.js';
 import { unlock, showButton } from './audio.js';
 import { initCountdown } from './countdown.js';
-import { initRsvp } from './rsvp.js';
 import { initLightbox } from './lightbox.js';
 
 const $ = s => document.querySelector(s);
@@ -36,7 +35,6 @@ const io = new IntersectionObserver(entries => {
 document.querySelectorAll('.sec [data-reveal], .viewer [data-reveal]').forEach(el => io.observe(el));
 
 initCountdown($('#countdown'));
-initRsvp();
 initLightbox();
 
 // calendar link (Google)

@@ -86,12 +86,12 @@
         <div class="crest" data-crest data-reveal></div>
         <div class="family" data-reveal style="--i:1">
           <h2 class="fname">M Shahriar Bin Malek</h2>
-          <p class="fline">Only Son of Mohammad Abdul Malek &amp; Kohinur Begum</p>
+          <p class="fline"><span>Only Son of Mohammad Abdul Malek</span> <span>&amp; Kohinur Begum</span></p>
         </div>
         <p class="with" data-reveal style="--i:2">With</p>
         <div class="family" data-reveal style="--i:3">
           <h2 class="fname">Sadia Afrin Riya</h2>
-          <p class="fline">Only Daughter of G M Belal Hossain &amp; Rokeya Sultana</p>
+          <p class="fline"><span>Only Daughter of G M Belal Hossain</span> <span>&amp; Rokeya Sultana</span></p>
         </div>
       </section>
 
@@ -134,65 +134,27 @@
 
       <div class="divider"><i></i></div>
 
-      <section class="sec rsvp" id="rsvp">
-        <p class="eyebrow" data-reveal>Contact &amp; RSVP</p>
+      <section class="sec contact-sec" id="contact">
+        <p class="eyebrow" data-reveal>Contact</p>
 
         <div class="contacts" data-reveal style="--i:1">
           <div class="contact">
+            <span class="c-role">Bride&rsquo;s Father</span>
             <span class="c-num">01713663450</span>
             <span class="c-btns">
-              <a class="chip" href="tel:+8801713663450" aria-label="Call 01713663450"><svg><use href="#i-phone"/></svg>Call</a>
-              <a class="chip" href="https://wa.me/8801713663450" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp 01713663450"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+              <a class="chip" href="tel:+8801713663450" aria-label="Call the bride&rsquo;s father, 01713663450"><svg><use href="#i-phone"/></svg>Call</a>
+              <a class="chip" href="https://wa.me/8801713663450" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp the bride&rsquo;s father, 01713663450"><svg><use href="#i-wa"/></svg>WhatsApp</a>
             </span>
           </div>
           <div class="contact">
+            <span class="c-role">Groom&rsquo;s Mother</span>
             <span class="c-num">01760925985</span>
             <span class="c-btns">
-              <a class="chip" href="tel:+8801760925985" aria-label="Call 01760925985"><svg><use href="#i-phone"/></svg>Call</a>
-              <a class="chip" href="https://wa.me/8801760925985" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp 01760925985"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+              <a class="chip" href="tel:+8801760925985" aria-label="Call the groom&rsquo;s mother, 01760925985"><svg><use href="#i-phone"/></svg>Call</a>
+              <a class="chip" href="https://wa.me/8801760925985" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp the groom&rsquo;s mother, 01760925985"><svg><use href="#i-wa"/></svg>WhatsApp</a>
             </span>
           </div>
         </div>
-
-        <form class="rsvp-card" id="rsvpForm" data-reveal style="--i:2" novalidate>
-          <h2 class="rsvp-title">Kindly Reply</h2>
-
-          <label class="field">
-            <span>Full Name</span>
-            <input type="text" name="name" autocomplete="name" required maxlength="80">
-          </label>
-
-          <fieldset class="field attend">
-            <legend>Attendance</legend>
-            <label><input type="radio" name="attend" value="accept" checked><span>Joyfully Accept</span></label>
-            <label><input type="radio" name="attend" value="decline"><span>Regretfully Decline</span></label>
-          </fieldset>
-
-          <div class="field guests" id="guestsField">
-            <span>Number of Guests</span>
-            <div class="stepper">
-              <button type="button" data-step="-1" aria-label="Fewer guests">&minus;</button>
-              <output id="guestCount" aria-live="polite">1</output>
-              <button type="button" data-step="1" aria-label="More guests">+</button>
-            </div>
-          </div>
-
-          <label class="field">
-            <span>Dua / Wishes</span>
-            <textarea name="wish" rows="3" maxlength="400"></textarea>
-          </label>
-
-          <label class="field">
-            <span>Send RSVP to</span>
-            <select name="to">
-              <option value="8801713663450">01713663450</option>
-              <option value="8801760925985">01760925985</option>
-            </select>
-          </label>
-
-          <button class="btn btn--solid btn--wide" type="submit"><svg><use href="#i-wa"/></svg>Send RSVP</button>
-          <p class="form-error" id="formError" role="alert" hidden></p>
-        </form>
       </section>
 
       <div class="divider"><i></i></div>
@@ -263,15 +225,6 @@
   <p class="sheet-sub">Friday, 25 December 2026 &middot; 6:30 PM</p>
   <a class="btn btn--solid btn--wide" href="wedding.ics"><svg><use href="#i-down"/></svg>Apple / Outlook (.ics)</a>
   <a class="btn btn--wide" id="gcalLink" target="_blank" rel="noopener noreferrer" href="https://calendar.google.com/calendar/render?action=TEMPLATE"><svg><use href="#i-google"/></svg>Google Calendar</a>
-</dialog>
-
-<dialog class="sheet" id="rsvpDialog" aria-labelledby="rsvpTitle">
-  <button class="x" type="button" data-close aria-label="Close"><svg><use href="#i-close"/></svg></button>
-  <p class="eyebrow">JazakAllahu Khairan</p>
-  <h2 id="rsvpTitle">Thank you, <span id="rsvpName"></span></h2>
-  <p class="sheet-sub">One last step &mdash; send your reply on WhatsApp:</p>
-  <blockquote class="preview" id="rsvpPreview"></blockquote>
-  <a class="btn btn--solid btn--wide" id="rsvpSend" target="_blank" rel="noopener noreferrer" href="#"><svg><use href="#i-wa"/></svg>Send on WhatsApp</a>
 </dialog>
 
 <dialog class="lightbox" id="cardDialog" aria-label="Formal wedding card">
