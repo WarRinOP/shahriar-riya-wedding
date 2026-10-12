@@ -100,7 +100,7 @@ svg { display: block; }
 [data-reveal] { --step: 120ms; opacity: 0; transform: translateY(14px); filter: blur(6px);
   transition: opacity .9s var(--ease), transform .9s var(--ease), filter .9s var(--ease), clip-path 1.2s var(--ease);
   transition-delay: calc(var(--i, 0) * var(--step)); }
-.hero [data-reveal] { --step: 450ms; }
+.hero [data-reveal] { --step: 280ms; }
 .bismillah-wrap[data-reveal] { clip-path: inset(0 0 0 100%); }
 .device.is-revealed .hero [data-reveal], [data-reveal].in { opacity: 1; transform: none; filter: none; }
 .device.is-revealed .hero .bismillah-wrap[data-reveal], .bismillah-wrap[data-reveal].in { clip-path: inset(0); }

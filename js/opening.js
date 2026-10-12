@@ -5,8 +5,9 @@ export function initGate({ gate, device, scroller, onTap, onDone }) {
   const anims = [];
   let started = false;
 
+  const SPEED = 0.72; // < 1 = faster; scales every delay and duration of the opening sequence
   const A = (el, keyframes, opts) => {
-    const a = el.animate(keyframes, { fill: 'both', ...opts });
+    const a = el.animate(keyframes, { fill: 'both', ...opts, delay: (opts.delay || 0) * SPEED, duration: opts.duration * SPEED });
     anims.push(a);
     return a;
   };
@@ -15,6 +16,8 @@ export function initGate({ gate, device, scroller, onTap, onDone }) {
     if (started) return;
     started = true;
     gate.classList.add('opening');
+    // let the text start appearing while the doors are still clearing, instead of waiting for them to finish
+    setTimeout(() => device.classList.add('is-revealed'), reduce ? 300 : 1500 * SPEED);
 
     if (reduce) {
       A(gate, [{ opacity: 1 }, { opacity: 0 }], { duration: 400 });
